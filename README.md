@@ -279,12 +279,12 @@ Hands-on practice quest #01: pre-built disk image lifecycle <sup>30 + 5</sup>
 - [ ] Given пары участников
 
 - [ ] When участники именуют сценарии, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "Как посмотреть хранящиеся образы на локальной машины?"
 ```shell
 docker image ls # TODO: собственные пометки участников для будущего использования в проектах
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как скачать образ из репозитория и посмотреть список образов?"
 ```shell
 docker image pull alpine
 docker image ls
@@ -292,9 +292,9 @@ docker image ls
 
 - Сценарий "Как ...?"
 ```shell
-docker image history alpine
+docker image history alpine # посомтреть историю образов, что было сделано
 
-docker image inspect alpine
+docker image inspect alpine # посмотреть инфу на low-level для Докер объекта
 docker image inspect --format='{{.Id}} -> {{.Parent}}' alpine
 ```
 
